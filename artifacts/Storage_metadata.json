@@ -6,6 +6,32 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"name": "number",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -47,10 +73,10 @@
 	},
 	"sources": {
 		"simpleStorage.sol": {
-			"keccak256": "0x30c24945cea16f6209422196644d5711467d6b55c0261ef352dc629e8f2566d4",
+			"keccak256": "0x03531f25fbb3a60ea74a211c553d337935e978bb26ed5ce16fbb4bfcc32a3f4d",
 			"urls": [
-				"bzz-raw://a6ec6563c091231473a6f030d09ffa79391929009c9e431fb3fcdeb68eea2616",
-				"dweb:/ipfs/QmQVaa1HbtCawbq8fQk6CaovQX9EvjcvhRZsFfFm9AZdvR"
+				"bzz-raw://d6562dcae18413d8a7b4621e59129bd94a4aecdb975349c5b4e1bdc76545682e",
+				"dweb:/ipfs/QmVTrq44roFon1neWsccjMByGrVTvNr4BZZygRPb4FyPnb"
 			]
 		}
 	},
