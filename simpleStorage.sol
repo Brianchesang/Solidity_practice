@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0 ; //this defines the version  of solidity that we'll be using
 
-contract Storage{
+contract simpleStorage{
     uint256 public number ; //variable initialization 
 
     struct people{

@@ -6,26 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "createsimpleStorageContract",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_storageInstanceIndex",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_simpleStorageNumber",
+						"name": "_number",
 						"type": "uint256"
 					}
 				],
-				"name": "sfStore",
+				"name": "addPerson",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -33,12 +26,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToNumber",
+				"outputs": [
+					{
 						"internalType": "uint256",
-						"name": "_storageInstanceIndex",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "sfretrieve",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "number",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -57,15 +63,46 @@
 						"type": "uint256"
 					}
 				],
-				"name": "storageInstanceArray",
+				"name": "person",
 				"outputs": [
 					{
-						"internalType": "contract simpleStorage",
-						"name": "",
-						"type": "address"
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -82,7 +119,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"storageFactory.sol": "storageFactory"
+			"simpleStorage.sol": "simpleStorage"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -102,14 +139,6 @@
 			"urls": [
 				"bzz-raw://987ace417493d8d53a384363830ad80eb7383773150255f0c7dd9ffea7412895",
 				"dweb:/ipfs/Qmdzh3TcGWhPJWadjSkZ6Wii5KTCZ5dEw3FXq1LX9JA8VG"
-			]
-		},
-		"storageFactory.sol": {
-			"keccak256": "0xa0d7bff4447c541306de67c0f03eda083c1b583a04cd289accd6a91fa57f49ab",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://a911010b1da92b10906991851f02f2e14d3432cc3a76b9ea9a8ae8f079f7d6bd",
-				"dweb:/ipfs/QmYeUVhyZv8aySnfQhjCBXkKaBS5tuDGfSpWGJqCyJkFRB"
 			]
 		}
 	},
