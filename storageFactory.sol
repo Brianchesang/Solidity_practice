@@ -17,7 +17,7 @@ contract storageFactory {
 
     function sfretrieve( uint256 _storageInstanceIndex)  public view returns (uint256){
         simpleStorage storageInstance = simpleStorage(address(storageInstanceArray[_storageInstanceIndex]));
-        return simpleStorage.retrieve();
+        return storageInstance.retrieve();
 
     }
 
