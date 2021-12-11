@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.10+commit.fc410830"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -32,6 +32,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "ethAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "getConversionRAte",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "getPrice",
 				"outputs": [
@@ -55,6 +74,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -94,11 +120,11 @@
 			]
 		},
 		"fundMe.sol": {
-			"keccak256": "0x9ae4a468e01ca0a151515d81e34763b3c596cb952a671c634460ddec92f8293d",
+			"keccak256": "0x11d8a7633a594512f2b415b3c37c71aa42d5d2e0710098dd137a45d5363674be",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f170795d69cc654058bd4374562353a49cbe58266b63c43173bab796f4c1926b",
-				"dweb:/ipfs/Qmbw7yM2uuvVHP3ypmtr6uuLBJANgnE83DLzWiUcniUZeN"
+				"bzz-raw://84e525f101d56cd7265c4b55b57f0546d34baa236dcc1dde66337e0574d076ec",
+				"dweb:/ipfs/QmV66op4AVvzs4YCBTDcMURsBf26rhJtJn39xF3gsKuNsH"
 			]
 		}
 	},
